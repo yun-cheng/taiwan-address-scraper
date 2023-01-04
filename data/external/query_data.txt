@@ -1,0 +1,25 @@
+searchType: date
+cityCode: 65000000
+tkt: -1
+areaCode: 65000290
+village:
+neighbor:
+sDate: 001-01-01
+eDate: 111-12-01
+includeNoDate: true
+_includeNoDate: on
+registerKind: 0
+floor:
+lane:
+alley:
+number:
+number1:
+ext:
+_search: false
+nd:
+rows: 99999999
+page: 1
+sidx:
+sord: asc
+captchaInput: xxxxx
+captchaKey: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx

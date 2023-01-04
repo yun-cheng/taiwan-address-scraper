@@ -1,0 +1,60 @@
+{
+  // > R
+  "r.alwaysUseActiveTerminal": true,
+  "r.bracketedPaste": true,
+  "[r]": {
+    "editor.defaultFormatter": "REditorSupport.r"
+  },
+  // > Python
+  "python.languageServer": "Pylance",
+  "python.analysis.completeFunctionParens": true,
+  "jupyter.notebookFileRoot": "${workspaceFolder}",
+  "jupyter.sendSelectionToInteractiveWindow": true,
+  "notebook.lineNumbers": "on",
+  "[python]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    },
+  },
+  "isort.args": [
+    "--profile",
+    "black"
+  ],
+  // > macros
+  "macros": {
+    "pythonExecSelectionAndCursorDown": [
+      "python.execSelectionInTerminal",
+      "cursorDown"
+    ],
+    "jupyterExeSelThenCursorDown": [
+      "jupyter.execSelectionInteractive",
+      "cursorDown"
+    ],
+    "jupyterRunCellThenCursorDown": [
+      "jupyter.runcurrentcelladvance",
+      "cursorDown"
+    ],
+    "interactiveExe": [
+      "interactive.execute",
+      "cursorDown"
+    ]
+  },
+  // > cSpell
+  "cSpell.words": [
+    "COUNTYCODE",
+    "COUNTYNAME",
+    "devcontainer",
+    "dotenv",
+    "dtype",
+    "geopandas",
+    "iloc",
+    "iterrows",
+    "nunique",
+    "rstudio",
+    "TOWNCODE",
+    "TOWNNAME",
+    "twocaptcha"
+  ],
+}

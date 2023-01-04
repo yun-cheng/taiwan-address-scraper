@@ -1,0 +1,28 @@
+[
+    // > python
+    {
+        "key": "ctrl+enter",
+        "command": "macros.pythonExecSelectionAndCursorDown",
+        "when": "editorTextFocus && editorLangId == 'python'"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "macros.jupyterExeSelThenCursorDown",
+        "when": "editorTextFocus && isWorkspaceTrusted && jupyter.ownsSelection && !findInputFocussed && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "macros.pythonExecSelectionAndCursorDown",
+        "when": "editorTextFocus && !findInputFocussed && !jupyter.ownsSelection && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "macros.jupyterRunCellThenCursorDown",
+        "when": "editorTextFocus && isWorkspaceTrusted && jupyter.hascodecells && !editorHasSelection && !notebookEditorFocused"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "macros.interactiveExe",
+        "when": "resourceScheme == 'vscode-interactive'"
+    }
+]

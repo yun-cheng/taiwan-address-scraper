@@ -1,0 +1,38 @@
+version: '3.8'
+services:
+  # r:
+  #   build:
+  #     context: .
+  #     dockerfile: .devcontainer/R/Dockerfile
+  #   ports:
+  #     - '8787:8787'
+  #   environment:
+  #     - DISABLE_AUTH=true
+  #   volumes:
+  #     - .:/workspace
+  #     - ./.rstudio_config:/home/rstudio/.config/rstudio
+  #     # * 略過
+  #     - /workspace/.rstudio_config/
+  #     - r-vscode-extensions:/root/.vscode-server-insiders/extensions
+
+  python:
+    build:
+      context: .
+      dockerfile: .devcontainer/python/Dockerfile
+    volumes:
+      - .:/workspace
+      - python-vscode-extensions:/root/.vscode-server-insiders/extensions
+    # command: /bin/sh -c "while sleep 1000; do :; done"
+    depends_on:
+      - selenium
+
+  selenium:
+    image: selenium/standalone-chrome
+    ports:
+      - '4444:4444'
+    environment:
+      - SE_NODE_SESSION_TIMEOUT=600
+
+volumes:
+  # r-vscode-extensions:
+  python-vscode-extensions:
