@@ -1,4 +1,4 @@
-# Taiwanese Addresses Scraper
+# Taiwan Address Scraper
 
 ## File Structure
 
